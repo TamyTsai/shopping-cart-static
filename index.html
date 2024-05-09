@@ -24,11 +24,11 @@
         <tbody>
           <tr> <!-- 第二列 -->
             <td>JavaScript DOM</td>
-            <td>250</td>
+            <td class="item1UnitPrice">250</td>
             <td>
               <span id="item1Quantity">0</span>
-              <a href="#" class="addProduct">-</a>
-              <a href="#" class="addProduct">+</a>
+              <a href="#" class="addProduct" onclick="addProduct(-1);">-</a>
+              <a href="#" class="addProduct" onclick="addProduct(1);">+</a>
             </td>
             <td><span id="item1Price">0</span></td>
           </tr>
@@ -44,7 +44,7 @@
       <input type="checkbox" class="skill" id="git" value="git"><label for="git">Git</label>
       <input type="checkbox" class="skill" id="ruby" value="ruby"><label for="ruby">Ruby</label>
       <input type="checkbox" class="skill" id="ruby-on-rails" value="ruby-on-rails"><label for="ruby-on-rails">Ruby on Rails</label>
-      <a href="#" class="selectAll">我全都要</a>
+      <a href="#" class="selectAll" onclick="selectedAll_or_UnselectedAll();">我全都要</a> <!-- 按下此元素後，呼叫js函數selectedAll_or_UnselectedAll() -->
     </section>
 
   </main>
