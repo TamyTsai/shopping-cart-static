@@ -15,7 +15,7 @@ body main h1 {
 }
 
 /* 購物車 start */
-a.addProduct {
+body main .cart table tbody tr td a.addProduct {
   text-decoration: none;
   color: white;
   font-size: 1.3em;
@@ -25,9 +25,10 @@ a.addProduct {
 }
 
 a.addProduct:hover {
-  background-color: #91a52c;
+  background-color: #62701f;
   transition: background-color 0.3s;
 }
+/* 加減符號懸浮變色效果 */
 
 body main .cart table {
   background-color: #fff;
