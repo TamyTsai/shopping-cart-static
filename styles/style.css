@@ -24,7 +24,7 @@ body main .cart table tbody tr td a.addProduct {
   border-radius: 3px;
 }
 
-a.addProduct:hover {
+body main .cart table tbody tr td a.addProduct:hover {
   background-color: #62701f;
   transition: background-color 0.3s;
 }
@@ -64,5 +64,10 @@ body main .skillset .selectAll {
   background-color: #47520d;
   text-decoration: none;
   border-radius: 4px;
+}
+
+body main .skillset .selectAll:hover {
+  background-color: #181d00;
+  transition: background-color 0.3s;
 }
 /* 想學習的技能 end */
