@@ -1,6 +1,6 @@
 // 將勾選框 全選
 function selectAllSkills() {
-    var skills = document.querySelectorAll('.skill'); // 抓出所有html選項元素 指定給變數skills(形成一個陣列)
+    var skills = document.querySelectorAll('.skill'); // 抓出所有html選項元素 指定給變數skills(形成一個陣列 DOM元素)
 
     // for 迴圈
     for (var i = 0; i < skills.length; i++) { // 變數i起始值指定為0，運行條件：變數i的值小於變數skills的長度，每次運行完做的事：將變數i的值+1後 指定回給 i）
@@ -61,3 +61,25 @@ function addProduct(amount) {
     priceField.innerHTML = quantity * 250;  // 計算總價後，餵回給 小計欄位
 }
 
+
+// UJS寫法
+// document.querySelector('.selectAll').addEventListener("click", function(evt)) {
+//   evt.preventDefault();
+//   // 檔下預設行為，本例中有沒有加都沒差
+//   selectedAll_or_UnselectedAll();
+// };
+// // 把全選按鈕DOM元素 抓出來，監聽click事件，事件觸發後，執行call back 匿名函數，執行後面程式碼區塊
+// // 本來 selectedAll_or_UnselectedAll() 是直接寫在HTML中的
+// // 原本是是在HTML寫 <a href="#" class="selectAll" onclick="selectedAll_or_UnselectedAll();">我全都要</a>
+
+// document.querySelector('#minusItem').onclick = funtion(evt) {
+//   evt.preventDefault();
+//   addProduct(-1);
+// };
+// // 原本是是在HTML寫 <a href="#" class="addProduct" onclick="addProduct(-1);">-</a>
+
+// document.querySelector('#addItem').onclick = funtion(evt) {
+//   evt.preventDefault();
+//   addProduct(+1);
+// };
+// 原本是是在HTML寫 <a href="#" class="addProduct" onclick="addProduct(1);">+</a>
