@@ -4,7 +4,7 @@
 ![截圖 2024-05-09 專案畫面](https://github.com/TamyTsai/shopping-cart-static/assets/97825677/2547087d-2597-492b-86e8-aeabc1c15ba6)
 
 ## 關於購物車
-把喜歡的品項加入購物車吧！
+- 把喜歡的品項加入購物車吧！
 
 <!-- ## 簡介
 - [Demo Link](https://tamytsai.github.io/shopping-cart-static/)
